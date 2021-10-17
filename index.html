@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+</head>
+<body>
+</div>
+<form>
+ <div>
+     <input type="text" name="" placeholder="Name" id="Name" required>
+ </div>
+ <div>
+     <input type="text" name="" placeholder="Email" id="Email" required>
+ </div>
+ <div>
+     <label for="" id="pick">Pick a date</label>
+     <input type="number" name="" placeholder="MM" id="mm" min="1" max="12" >
+     <input type="number" name="" id="dd" placeholder="DD" min="1" max="31" >
+     <input type="number" name="" placeholder="YYYY" id="yy" min="1950" max="2021" >
+ </div>
+ <div>
+  <label for="" id="time">Pick a time</label>
+  <input type="number" name="Hour" placeholder="09" id="hour" min="01" max="12" >
+  <input type="number" name="Minute" id="minute" placeholder="00" min="00" max="59" >
+  <select name="AM-PM" id="AM-PM">
+      <option class="am">AM</option>
+      <option class="am">PM</option>
+  </select>
+  </div>
+   
+  <div id="people">
+      <input id="sub" type="button" value="-" onclick="btn2()"/>
+      <span id="emptyregion"></span>
+      <input id="add" type="button" value="+" onclick="btn1()"> 
+  </div>
+  <div>
+      <button type="submit" id="b1" onclick="mysubmit()" >MAKE RESERVATION</button>
+  </div>
+</form>
+
+<script>
+    function mysubmit() {
+        alert("Your reservation has been made!!!")
+    }
+    var y = 0;
+    var x = '$(y) people';
+    
+    document.getElementById("emptyregion").innerHTML = x;
+
+    function btn1() {
+        if (y >= 0) {
+            y++;
+            if (y === 1) {
+                document.getElementById("emptyregion").innerHTML = '$(y) person';
+            } else {
+                document.getElementById("emptyregion").innerHTML = '$(y) people';
+            }
+        }
+    }
+
+    function btn2() {
+        if (y > 0) {
+            y--;
+            if (y === 0) {
+                document.getElementById("emptyregion").innerHTML = '$(y) people'; 
+            } else if (y === 1) {
+                 document.getElementById("emptyregion").innerHTML = '$(y) person';
+            } else {
+                document.getElementById("emptyregion").innerHTML  = '$(y) people';
+            }
+        }
+    }
+  
+
+</script>
+
+</body>
+</html>

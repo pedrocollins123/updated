@@ -1,0 +1,172 @@
+form {
+    position: absolute;
+    text-align: center;
+    width: 25%;
+    height: 450px;
+    background-color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+  
+    
+}
+
+
+#AM-PM{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(./icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: calc(100% - 3px) center;
+    width: 58px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    padding: 14px;
+    padding-right: 2px;
+    background-color: white;
+    border-bottom: 2px solid #d3d3d3;
+    
+}
+
+
+input {
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none; 
+    width: 20%;
+}
+
+
+#b1 {
+    position: relative;
+    top: 10px;
+    width: 300px;
+    height: 45px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+#Name {
+    padding: 10px;
+    margin-top: 60px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+    width: 300px;
+    
+}
+
+#Email {
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+    width: 300px;
+}
+
+#pick {
+    padding: 10px;
+    
+    margin-left: -10px;
+   
+    
+}
+
+#mm {
+    padding: 10px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+    width: 54px;
+}
+
+#dd {
+    padding: 10px;
+    margin-top: px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+    width: 54px;
+    text-align: center;
+}
+
+#yy {
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+    width: 54px;
+    text-align: center;
+}
+
+#time {
+    padding: 10px;
+    
+    margin-left: -10px;
+    
+}
+
+#hour {
+    padding: 15px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+    width: 54px;
+    text-align: center;
+}
+
+#minute {
+    padding: 15px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #d3d3d3;
+    width: 54px;
+    text-align: center;
+}
+
+
+
+#plus {
+    width: 7px;
+    height: 7px;
+    left: 100px;
+    padding-left: 100px;
+    padding-top: 48px;
+}
+
+#minus {
+    width: 7px;
+    height: 2px;
+    padding-top: 48px;
+    padding-left: 60px;
+}
+
+#sub {
+    border: none;
+    background-color: white;
+    margin-right: 0px;
+    color: #9e7f66;
+    font-size: 20px;
+}
+
+#add {
+    border: none;
+    background-color: white;
+    color: #9e7f66;
+    font-size: 20px;
+}
+
+
+
+#people {
+    padding-top: 25px;
+}
+
+span {
+    color: black;
+}
